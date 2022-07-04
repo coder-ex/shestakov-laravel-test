@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "56c78fc7-5ff1-4bd6-a0ba-dab869fe072a",
+		"name": "Shestakov-Laravel",
+		"description": "Коллекция по ТЗ ИП Шестакова",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all Materials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://school.loc/api/materials",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"materials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit Material",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"Ключевые идеи книги\",\n    \"category\": \"Банк\",\n    \"title\": \"какой то title\",\n    \"author\": \"u0@ya.ru\",\n    \"description\": \"la la la tru la la 888 new description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://school.loc/api/materials/62961a1d-4fed-4046-82d0-6baee8157041",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"materials",
+						"62961a1d-4fed-4046-82d0-6baee8157041"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Material",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"Ключевые идеи книги\",\n    \"category\": \"Банк\",\n    \"title\": \"уникальный новый title создаваемому материалу 2\",\n    \"author\": \"u0@ya.ru\",\n    \"description\": \"la la la tru la la 888 new description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://school.loc/api/materials/create",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"materials",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Material",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://school.loc/api/materials/81aba939-7430-4218-ab38-a2e04ebd5099",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"materials",
+						"81aba939-7430-4218-ab38-a2e04ebd5099"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://school.loc/api/tags",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit Tag",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"newTag\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://school.loc/api/tags/a03ac765-3bea-402a-ad2f-614bd56d14e7",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"tags",
+						"a03ac765-3bea-402a-ad2f-614bd56d14e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Tag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"СУПЕРТЕГ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://school.loc/api/tags/create",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"tags",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://school.loc/api/categories",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"КостянБанк\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://school.loc/api/categories/b391eb54-7348-4cb0-b1f0-cff13dde8511",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"categories",
+						"b391eb54-7348-4cb0-b1f0-cff13dde8511"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nomos-Bank\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://school.loc/api/categories/create",
+					"protocol": "http",
+					"host": [
+						"school",
+						"loc"
+					],
+					"path": [
+						"api",
+						"categories",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
